@@ -1,6 +1,6 @@
 {
-    "name": "ilateral/silverstripe-bootstrap-4",
-    "description": "A simple SilverStripe theme built on bootstrap 4",
+    "name": "ilateral/silverstripe-sideswipe-theme",
+    "description": "A SilverStripe theme with affixed left sidebar nav",
     "type": "silverstripe-theme",
     "keywords": [
         "silverstripe",
@@ -15,7 +15,7 @@
         }
     ],
     "extra": {
-        "installer-name": "bootstrap",
+        "installer-name": "sideswipe",
         "expose": [
             "css",
             "javascript",
