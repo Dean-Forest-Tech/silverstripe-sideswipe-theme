@@ -1,6 +1,6 @@
 <header class="col-md-auto py-0 sticky-top" role="banner">
-	<div class="d-flex sticky-top flex-column py-3">
-		<h1>				
+	<div class="d-flex sticky-top flex-column py-5">
+		<h1 class="text-center">				
 			<a href="$BaseHref" class="brand" rel="home">
 				<% if $SiteConfig.Logo %>
 					<img class="img-fluid" src="$SiteConfig.Logo.ScaleHeight(80).Link" alt="$SiteConfig.Title - $SiteConfig.Tagline">

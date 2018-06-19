@@ -1,5 +1,4 @@
 <footer class="col-auto" role="contentinfo">
-    <div class="container px-lg-0">
         <div class="row">
             <div class="col-sm">
                 <ul class="nav">
@@ -32,5 +31,4 @@
             </div>
         </div>
         <p class="text-center">&copy; Copyright {$Now.Year} {$SiteConfig.Title}. All rights reserved. | Site built and maintained by <a href="http://www.ilateralweb.co.uk" target="_blank">ilateral</a>.</p>
-    </div>
 </footer>
