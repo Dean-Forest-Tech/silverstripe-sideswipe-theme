@@ -1,4 +1,4 @@
-<footer role="contentinfo">
+<footer class="col-auto" role="contentinfo">
     <div class="container px-lg-0">
         <div class="row">
             <div class="col-sm">

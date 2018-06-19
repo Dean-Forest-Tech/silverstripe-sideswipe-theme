@@ -9512,6 +9512,11 @@ body .cookie_inner {
   padding: 0 15px;
 }
 
+html .container-fluid > .row,
+body .container-fluid > .row {
+  min-height: 100%;
+}
+
 @media (min-width: 768px) {
   html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
   body .container,

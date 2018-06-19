@@ -1,6 +1,6 @@
-<nav class="col navbar navbar-expand-lg navbar-light navbar-main">  
+<nav class="navbar navbar-expand-md navbar-light navbar-main px-0">  
 	<div class="collapse navbar-collapse" id="MainNav">
-	  <ul class="navbar-nav ml-sm-auto">
+	  <ul class="navbar-nav flex-column w-100">
 			<% if $CustomMenu('main-menu') %>
 				<% loop $CustomMenu('main-menu') %>
 					<li class="$LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %>"><a class="nav-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>

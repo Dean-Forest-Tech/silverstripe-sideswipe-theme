@@ -1,7 +1,7 @@
 <!doctype html>
 
 	<!--[if !IE]><!-->
-	<html lang="$ContentLocale">
+	<html class="h-100" lang="$ContentLocale">
 	<!--<![endif]-->
 	<!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
 	<!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
@@ -30,19 +30,22 @@
 		<% include Icons %>
 		<% include Requirements %>
 	</head>
-	<body class="$ClassName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-		
-		<% include Header %>
-
-		<div class="main<% if $Level(2) %> sublevel<% end_if %><% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
-			<div class="container typography">
-				<div class="row">
-					$Layout
+	<body class="$ClassName h-100" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+		<div class="container-fluid h-100">
+			<div class="row align-items-stretch">
+				<% include Header %>
+				<div class="col-md main<% if $Level(2) %> sublevel<% end_if %><% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
+					<div class="row h-100 flex-column justify-content-between">
+						<div class="col-auto">
+							<div class="container px-md-3 typography">
+								$Layout
+							</div>
+						</div>
+						<% include Footer %>
+					</div>
 				</div>
+
 			</div>
 		</div>
-
-		<% include Footer %>
-
 	</body>
 </html>
