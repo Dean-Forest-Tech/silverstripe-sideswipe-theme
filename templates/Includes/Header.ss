@@ -3,7 +3,7 @@
 		<h1 class="text-center">				
 			<a href="$BaseHref" class="brand" rel="home">
 				<% if $SiteConfig.Logo %>
-					<img class="img-fluid" src="$SiteConfig.Logo.ScaleHeight(80).Link" alt="$SiteConfig.Title - $SiteConfig.Tagline">
+					$SiteConfig.Logo.ScaleHeight(80)
 				<% else %>
 					$SiteConfig.Title
 				<% end_if %>
