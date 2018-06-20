@@ -5,16 +5,16 @@
         </div>
     </div>
 <% else_if $FeaturedImage %>
-    <p class="banner-image row mb-4 d-block">
+    <p class="banner-image mb-4 d-block">
         <span class="d-sm-none">$FeaturedImage.Fill(400,300)</span>
         <span class="d-none d-sm-block d-lg-none">$FeaturedImage.Fill(800,400)</span>
-        <span class="w-100 d-none d-lg-block">$FeaturedImage.Fill(1200,500)</span>
+        <span class="w-100 d-none d-lg-block">$FeaturedImage.Fill(1600,600)</span>
     </p>
 <% else_if $Parent.FeaturedImage %>
-    <p class="banner-image row mb-4 d-block">
+    <p class="banner-image mb-4 d-block">
         <span class="d-sm-none">$Parent.FeaturedImage.Fill(400,300)</span>
         <span class="d-none d-sm-block d-lg-none">$Parent.FeaturedImage.Fill(800,400)</span>
-        <span class="d-none d-lg-block">$Parent.FeaturedImage.Fill(1200,500)</span>
+        <span class="d-none d-lg-block">$Parent.FeaturedImage.Fill(1600,600)</span>
     </p>
 <% end_if %>
 

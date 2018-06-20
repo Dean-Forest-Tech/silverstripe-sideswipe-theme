@@ -34,11 +34,11 @@
 		<div class="container-fluid h-100">
 			<div class="row align-items-stretch">
 				<% include Header %>
-				<div class="col-md p-0 main<% if $Level(2) %> sublevel<% end_if %><% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
+				<div class="col-md px-0 main<% if $Level(2) %> sublevel<% end_if %><% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
 					<div class="flex-row h-100 flex-column justify-content-between">
 						<div class="col-auto">
 							<div class="typography">
-								$Layout
+								<div class="row">$Layout</div>
 							</div>
 						</div>
 						<% include Footer %>
